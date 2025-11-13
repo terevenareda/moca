@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #F7F7F7;
   --foreground: #171717;
+  --navbar: #FEFEFE;
+  --yellow: #FFE42C;
+  --green: #1FA293;
+  --purple: #9A28CD;
+  --energy-green: #3BFFB5;
+  --skin-pink: #FFD3D2;
+  --hot-purple: #B433FF;
+  --peach: #FFA480;
+  --black: #1D1D1B;
 }
 
 @theme inline {
@@ -16,6 +25,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
   }
 }
 
@@ -23,4 +33,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background-color: var(--navbar);
+  border-radius: 90px;
+  margin: 0 2rem;
+}
+
+.logo-img{
+  width:15%;
+  height:auto;
+  margin: 4rem 1.5rem;
+  padding: 1rem;
 }
