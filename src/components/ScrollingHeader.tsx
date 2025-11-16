@@ -16,8 +16,8 @@ const ScrollingHeader = () => {
       <div className="flex gap-8 whitespace-nowrap animate-scroll">
         {[...items, ...items, ...items].map((item, idx) => (
         <div key={idx} className="flex items-center gap-3 text-2xl md:text-4xl font-bold flex-shrink-0">
-            <span className={item.color}>{item.text}</span>
-            <Image src={item.icon} alt={item.text} width={45} height={45} />
+            <span className="{item.color} scrollItem">{item.text}</span>
+            <Image src={item.icon} alt={item.text} width={30} height={30} />
         </div>
         ))}
       </div>

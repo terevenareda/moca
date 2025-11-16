@@ -5,7 +5,7 @@ import BentoGrid from "@/components/BentoGrid";
 
 const Page=() => {
   return (
-    <div>
+    <div className="">
       <ScrollingHeader />
       <BentoGrid/>
     </div>
