@@ -37,13 +37,64 @@ body {
 
 .navbar{
   background-color: var(--navbar);
-  border-radius: 90px;
-  margin: 0 2rem;
+  margin: 1rem 2.5rem;
+}
+.logo-img {
+  width: 10rem;
+  height: auto;
+  margin: 1.5rem 2rem;
 }
 
-.logo-img{
-  width:15%;
-  height:auto;
-  margin: 4rem 1.5rem;
-  padding: 1rem;
+.row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 2rem;
+
+}
+
+.notifications, .quote , .search{
+  width: 36.5px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple);
+  border-radius: 50px;
+  margin: 0;
+}
+
+.line {
+  margin: 0;
+  width: 10px; 
+  height: 4px;
+  background-color: var(--purple);
+}
+
+.notification-badge { 
+  position: absolute; 
+  top: 0px; 
+  right: 0px; 
+  background-color: #ff4757; 
+  color: white; 
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  display:flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 12px; 
+  font-weight: bold;
+  border: 2px solid white;
+
+}
+
+.header{
+  height: 88px;
+  margin-top: 3rem;
 }

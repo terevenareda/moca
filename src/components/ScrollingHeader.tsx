@@ -1,23 +1,24 @@
 'use client'
 
+import Image from "next/image";
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const ScrollingHeader = () => {
   const items = [
-    { text: 'GREAT TEAMS.', icon: '/assets/path.png', color: 'text-purple-600' },
-    { text: 'GREATER', icon: '/assets/path2.png', color: 'text-purple-600' },
-    { text: 'MEMBER EXPERIENCES', icon: '/assets/path3.png', color: 'text-purple-600' },
+    { text: 'GREAT TEAMS.', icon: '/assets/path.svg', color: 'var(--black)' },
+    { text: 'GREATER', icon: '/assets/path2.svg', color: 'var(--black)' },
+    { text: 'MEMBER EXPERIENCES', icon: '/assets/path3.svg', color: 'var(--black)' },
   ];
 
   return (
-    <div className="overflow-hidden bg-white py-6 mb-8">
+    <div className="overflow-hidden header">
       <div className="flex gap-8 whitespace-nowrap animate-scroll">
         {[...items, ...items, ...items].map((item, idx) => (
-          <div key={idx} className="flex items-center gap-3 text-2xl md:text-4xl font-bold flex-shrink-0">
+        <div key={idx} className="flex items-center gap-3 text-2xl md:text-4xl font-bold flex-shrink-0">
             <span className={item.color}>{item.text}</span>
-            <span className="text-3xl">{item.icon}</span>
-          </div>
+            <Image src={item.icon} alt={item.text} width={45} height={45} />
+        </div>
         ))}
       </div>
       <style jsx>{`
